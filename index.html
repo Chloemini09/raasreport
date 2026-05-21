@@ -129,8 +129,17 @@ html,body{min-height:100%;background:#1a1a2e;font-family:'Noto Sans SC',sans-ser
 .anno-dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:5px;vertical-align:middle}
 
 @media(max-width:720px){
-  .device-wrap{flex-direction:column;align-items:center}
-  .anno{width:100%;max-width:390px}
+  body{background:#fff}
+  .page{padding:0}
+  .page-title{display:none}
+  .device-wrap{flex-direction:column;align-items:stretch;gap:0}
+  .device-label{display:none}
+  .anno{display:none}
+  .phone{width:100%;border-radius:0;border:none;box-shadow:none}
+  .phone::before{display:none}
+  .statusbar{display:none}
+  .wxtop{display:none}
+  .art{max-height:none;overflow-y:visible}
 }
 </style>
 </head>
